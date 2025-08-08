@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Donate - SYNAPTIKONE</title>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+    <header>
+        <div class="logo-title-container">
+            <div class="language-switch">
+                <a href="../fr/dont.html">FR</a> | <a href="../en/dont_en.html">EN</a>
+            </div>
+            <img src="../img/SynaptikOne.png" alt="Darkphex Logo" class="logo" />
+            <h1 class="title">SynaptikOne</h1>
+        </div>
+
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <nav class="menu">
+            <a href="index_en.html">Home</a>
+            <a href="about_en.html">About</a>
+            <a href="projects_en.html">Projects</a>
+            <a href="contact_en.html">Contact</a>
+            <a href="newsletter_en.html">Newsletter</a>
+            <a href="mentions_en.html">Legal</a>
+            <a href="confidentialite_en.html">Privacy</a>
+            <a href="condition_en.html">Terms</a>
+            <a href="portfolio_en.html">Portfolio</a>
+            <a href="service_en.html">Services</a>
+            <a href="editions_en.html">Editions & Access</a>
+            <a href="dont_en.html" class="active">Donate</a>
+        </nav>
+    </header>
+
+    <main class="don-section">
+        <h2>Support GENOME_COMPRESSOR</h2>
+        <p><strong>GENOME_COMPRESSOR</strong> is a bio-inspired, open-source, and scalable data compressor developed to explore the intersections between biology, computing, and security.</p>
+
+        <p>The project is structured around several modules:</p>
+        <ul>
+            <li><strong>Free Edition</strong>: fully open source, released under the MIT License (Python)</li>
+            <li><strong>Experimental Modules</strong>: integration of hybrid encryption mechanisms (Rust)</li>
+            <li><strong>Advanced Extensions</strong>: applied research in post-quantum cryptography (Rust)</li>
+        </ul>
+
+        <p>Why donate?</p>
+        <ul>
+            <li>Support the development and maintenance of open-source code</li>
+            <li>Support the availability of free scientific documentation and tutorials</li>
+            <li>Encourage independent, ethical, and open research</li>
+        </ul>
+
+        <p>SynaptikOne does not follow any closed commercial model. <br />
+            Your donations help preserve scientific integrity, cover hosting and security costs, and ensure the project's evolution.
+        </p>
+
+        <div class="dont-bouton">
+            <!--
+            <a href="https//github.com/sponsors/yourusername" class="btn-github" target="_blank">
+                Become a GitHub Sponsor
+            </a>
+            -->
+            <a href="https://Ko-fi.com/tahina9715" class="btn-kofi" target="_blank">
+                Offer a coffee on Ko-fi
+            </a>
+        </div>
+
+        <!-- CRYPTO SECTION -->
+        <section class="crypto-don">
+            <h3>Cryptocurrency Donations (via Trust Wallet)</h3>
+            <p>You can also support the project by sending crypto donations. Here are the addresses:</p>
+
+            <div class="crypto-card">
+                <h4>Bitcoin (BTC)</h4>
+                <div class="crypto-row">
+                    <span id="btc-address" class="crypto-address">bc1q8sj2dn6gahhctvg8799rhnf4v76xxvt9k030fu</span>
+                    <button onclick="copyToClipboard('btc-address', this)" class="copy-btn">Copy</button>
+                </div>
+            </div>
+
+            <div class="crypto-card">
+                <h4>Ethereum (ETH)</h4>
+                <div class="crypto-row">
+                    <span id="eth-address" class="crypto-address">0x69fa6E4AD99edBa1bd522360C24ff2549230dA5e</span>
+                    <button onclick="copyToClipboard('eth-address', this)" class="copy-btn">Copy</button>
+                </div>
+            </div>
+
+            <div class="crypto-card">
+                <h4>USDT (ERC20)</h4>
+                <div class="crypto-row">
+                    <span id="usdt-address" class="crypto-address">TVA9byJL4NQ8nL2bt74xE3jEYMycxhX49x</span>
+                    <button onclick="copyToClipboard('usdt-address', this)" class="copy-btn">Copy</button>
+                </div>
+            </div>
+        </section>
+
+        <p style="font-style: italic; font-size: 0.9em;">
+            Transparency: all funds are used exclusively for development, security, and the free sharing of knowledge.
+        </p>
+    </main>
+
+    <footer>
+        <p>(c) 2025 SynaptikOne - Open Source and Bio-Inspired Innovation Lab</p>
+    </footer>
+
+    <script>
+        function copyToClipboard(id, button) {
+            const address = document.getElementById(id).innerText;
+            navigator.clipboard.writeText(address).then(() => {
+                const originalText = button.innerText;
+                button.innerText = "Copied!";
+                setTimeout(() => {
+                    button.innerText = originalText;
+                }, 1500);
+            });
+        }
+        
+    </script>
+
+    
+</body>
+</html>

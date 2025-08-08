@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faire un don - SYNAPTIKONE</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo-title-container">
+      <div class="language-switch">
+        <a href="../fr/dont.html">FR</a> | <a href="../en/dont_en.html">EN</a>
+      </div>
+      <img src="../img/SynaptikOne.png" alt="Logo Darkphex" class="logo">
+      <h1 class="title">SynaptikOne</h1>
+    </div>
+    
+
+    <!--Menu Hamburger-->
+    <input type="checkbox" id="menu-toggle">
+     <label for="menu-toggle" class="menu-icon">&#9776;</label>
+     <nav class="menu">
+      <a href="index.html">Accueil</a>
+      <a href="about.html">À propos</a>
+      <a href="projects.html">Projets</a>
+      <a href="contact.html">Contact</a>
+      <a href="newsletter.html">Newsletter</a>
+      <a href="mentions.html">Mentions</a>
+      <a href="confidentialite.html">Confidentialité</a>
+      <a href="conditions.html">Conditions</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="service.html">Service</a>
+      <a href="editions.html">Éditions & Accès</a>
+      <a href="dont.html" class="active">Don</a>
+     </nav>
+  </header>
+  <main class="don-section">
+    <h2>Soutenir GENOME_COMPRESSOR</h2>
+    <p><strong>GENOME_COMPRESSOR</strong> est un compresseur de données  bio-inspiré , open-source, et évolutif, développé pour explorer les ponts entre biologie, informatique est sécurite. </p>
+    <p>Le projet est structuré en plusieurs modules : </p>
+    <ul>
+      <li><strong>Édition Libre</strong>: entièrement open source, publiée sous licence MIT (Python)</li>
+
+      <li><strong>Module expérimentaux </strong>: intégration de mécanismes de sécurité (chiffrement hybride, Rust)</li>
+
+      <li><strong>Extensions avancée </strong>: recherche appliquée sur la cryptographie post-quantique (Rust)</li>
+    </ul>
+    <p>Pourquoi faire un don ?</p>
+    <ul>
+      <li>Soutenir le développement et la maintenance du code libre </li>
+      <li>Favorisez la documentation scientifique et les tutoriels gratuits </li>
+      <li>Encourager une recherche indépendant, éthique et ouverte  </li>
+    </ul>
+
+   
+
+    <p>SynaptikOne ne poursuit aucun modèle commercial fermé. <br /> 
+      Vos dons permettent de garantir l'intégrité scientifique,
+      l'hébergement, la sécurité et l'évolution du projet.
+    </p>
+
+    <div class="dont-bouton">
+    
+     <!--   <a href="https://github.com/sponsors/tonusername" class="btn-github" target="_blank">
+        Devenir sponsors  GitHub
+        
+      </a>
+       -->
+      <a href="https://Ko-fi.com/tahina9715" class="btn-kofi" target="_blank"> 
+        Offrir un café sur ko-fi
+      </a>
+      
+    </div>
+
+    <!-- SECTION CRYPTO -->
+     <section class="crypto-don">
+      <h3>Dons en cryptomonnaie (via Trust Wallet)</h3>
+      <p>Vous pouvez également soutenir le projet en envoyant des dons en crypto. Voici les adresses :</p>
+
+
+      <div class="crypto-card">
+        <h4>Bitcoin (BTC)</h4>
+        <div class="crypto-row">
+          <span id="btc-address" class="crypto-address">bc1q8sj2dn6gahhctvg8799rhnf4v76xxvt9k030fu</span>
+          <button onclick="copyToClipboard('btc-address', this)" class="copy-btn">Copier</button>
+        </div>
+      </div>
+
+      <div class="crypto-card">
+        <h4>Ethereum (ETH)</h4>
+        <div class="crypto-row">
+          <span id="eth-address" class="crypto-address">0x69fa6E4AD99edBa1bd522360C24ff2549230dA5e</span>
+          <button onclick="copyToClipboard('eth-address', this)" class="copy-btn">Copier</button>
+        </div>
+      </div>
+
+
+      <div class="crypto-card">
+        <h4>USDT (ERC20)</h4>
+        <div class="crypto-row">
+          <span id="usdt-address" class="crypto-address">TVA9byJL4NQ8nL2bt74xE3jEYMycxhX49x</span>
+          <button onclick="copyToClipboard('usdt-address', this)" class="copy-btn">Copier</button>
+        </div>
+      </div>
+     </section>
+
+    <p style="font-style: italic; font-size: 0.9em;">
+
+      Transparence: les fonds sont exclusivement utilisés pour le développement, la
+      sécurité, et le partage libre du savoir.
+    </p>
+
+    
+  </main>
+  <footer>
+    <p>(c) 2025 SynaptikOne - Laboratoire d'innovation libre et open source</p>
+  </footer>
+
+  <script>
+    function copyToClipboard(id, button) {
+      const address = document.getElementById(id).innerText;
+      navigator.clipboard.writeText(address).then(() => {
+        const originalText = button.innerText;
+        button.innerText = "Copié !";
+        setTimeout(() => {
+          button.innerText = originalText;
+        }, 1500);
+      });
+    }
+  </script>
+  
+</body>
+</html>
