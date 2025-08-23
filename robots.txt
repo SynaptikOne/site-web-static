@@ -1,0 +1,7 @@
+# robots.txt pour skillborn-site
+
+User-agent: *
+Allow: /
+
+# Sitemap principal
+Sitemap: https://ton-domaine-ou-github-pages/skillborn-site/sitemap.xml
