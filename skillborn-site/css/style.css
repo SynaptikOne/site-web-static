@@ -507,5 +507,21 @@ footer {
   opacity: 0.8;
 }
 
+/* Google Form responsive */
+.google-form-container {
+  max-width: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.google-form-container iframe {
+  width: 100%;
+  min-width: 300px;
+  height: 80vh;
+  border: none;
+}
+
 
 
