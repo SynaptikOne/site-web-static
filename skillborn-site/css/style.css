@@ -531,25 +531,25 @@ footer {
   margin-top: 4px;
 }
 
-/* retour en haut */
 .back-to-top {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #2e3a59;
-  color: white;
+  display: none;
+  background: #0066cc; /* Couleur SynaptikOne */
+  color: #fff;
   padding: 10px 15px;
   border-radius: 50%;
+  text-align: center;
+  font-size: 24px;
   text-decoration: none;
-  font-size: 1.2em;
-  display: none; /* affiché via JS quand on descend */
   z-index: 1000;
-  transition: background-color 0.3s ease;
 }
 
 .back-to-top:hover {
-  background-color: #1d263a;
+  background: #004999;
 }
+
 
 
 
