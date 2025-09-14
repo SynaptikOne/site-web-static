@@ -124,5 +124,22 @@
       });
     }
   </script>
+
+    <a href="#top" class="back-to-top" title="Retour en haut">↑</a>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const backToTop = document.querySelector('.back-to-top');
+      if (!backToTop) return;
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 200) {
+          backToTop.style.display = 'block';
+        } else {
+          backToTop.style.display = 'none';
+        }
+      });
+    });
+  </script>
 </body>
 </html>
