@@ -531,5 +531,25 @@ footer {
   margin-top: 4px;
 }
 
+/* retour en haut */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #2e3a59;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.2em;
+  display: none; /* affiché via JS quand on descend */
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: #1d263a;
+}
+
 
 
