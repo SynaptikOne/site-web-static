@@ -87,5 +87,23 @@
   <footer>
     <p>(c) 2025 SynaptikOne - Open Source and Free Innovation Lab</p>
   </footer>
+
+  <a href="#top" class="back-to-top" title="Back to top">↑</a>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const backToTop = document.querySelector('.back-to-top');
+    if (!backToTop) return;
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 200) {
+        backToTop.style.display = 'block';
+      } else {
+        backToTop.style.display = 'none';
+      }
+    });
+  });
+</script>
+
 </body>
 </html>
