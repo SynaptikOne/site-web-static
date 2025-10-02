@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+    xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Accueil -->
+  <url>
+    <loc>https://synaptikone.github.io/site-web-static/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://synaptikone.github.io/site-web-static/skillborn-site/FR/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://synaptikone.github.io/site-web-static/skillborn-site/en/index_en.html"/>
+  </url>
+
+  <!-- À propos -->
+  <url>
+    <loc>https://synaptikone.github.io/site-web-static/skillborn-site/FR/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://synaptikone.github.io/site-web-static/skillborn-site/FR/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://synaptikone.github.io/site-web-static/skillborn-site/en/about_en.html"/>
+  </url>
+
+  <!-- Éditions -->
+  <url>
+    <loc>https://synaptikone.github.io/site-web-static/skillborn-site/FR/editions.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://synaptikone.github.io/site-web-static/skillborn-site/FR/editions.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://synaptikone.github.io/site-web-static/skillborn-site/en/editions_en.html"/>
+  </url>
+
+  <!-- Partenariat -->
+  <url>
+    <loc>https://synaptikone.github.io/site-web-static/skillborn-site/FR/partenariat.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://synaptikone.github.io/site-web-static/skillborn-site/FR/partenariat.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://synaptikone.github.io/site-web-static/skillborn-site/en/partnership_en.html"/>
+  </url>
+
+  <!-- Contribution -->
+  <url>
+    <loc>https://synaptikone.github.io/site-web-static/skillborn-site/FR/contribution.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://synaptikone.github.io/site-web-static/skillborn-site/FR/contribution.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://synaptikone.github.io/site-web-static/skillborn-site/en/contribution_en.html"/>
+  </url>
+
+  <!-- Services -->
+  <url>
+    <loc>https://synaptikone.github.io/site-web-static/skillborn-site/FR/service.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://synaptikone.github.io/site-web-static/skillborn-site/FR/service.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://synaptikone.github.io/site-web-static/skillborn-site/en/service_en.html"/>
+  </url>
+
+  <!-- Portfolio -->
+  <url>
+    <loc>https://synaptikone.github.io/site-web-static/skillborn-site/FR/portfolio.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://synaptikone.github.io/site-web-static/skillborn-site/FR/portfolio.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://synaptikone.github.io/site-web-static/skillborn-site/en/portfolio_en.html"/>
+  </url>
+
+  <!-- Projets -->
+  <url>
+    <loc>https://synaptikone.github.io/site-web-static/skillborn-site/FR/projects.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://synaptikone.github.io/site-web-static/skillborn-site/FR/projects.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://synaptikone.github.io/site-web-static/skillborn-site/en/projects_en.html"/>
+  </url>
+
+  <!-- Newsletter -->
+  <url>
+    <loc>https://synaptikone.github.io/site-web-static/skillborn-site/FR/newsletter.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://synaptikone.github.io/site-web-static/skillborn-site/FR/newsletter.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://synaptikone.github.io/site-web-static/skillborn-site/en/newsletter_en.html"/>
+  </url>
+
+  <!-- Dons -->
+  <url>
+    <loc>https://synaptikone.github.io/site-web-static/skillborn-site/FR/dont.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://synaptikone.github.io/site-web-static/skillborn-site/FR/dont.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://synaptikone.github.io/site-web-static/skillborn-site/en/dont_en.html"/>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://synaptikone.github.io/site-web-static/skillborn-site/FR/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://synaptikone.github.io/site-web-static/skillborn-site/FR/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://synaptikone.github.io/site-web-static/skillborn-site/en/contact_en.html"/>
+  </url>
+
+  <!-- Mentions légales -->
+  <url>
+    <loc>https://synaptikone.github.io/site-web-static/skillborn-site/FR/mentions.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://synaptikone.github.io/site-web-static/skillborn-site/FR/mentions.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://synaptikone.github.io/site-web-static/skillborn-site/en/mentions_en.html"/>
+  </url>
+
+  <!-- Conditions générales -->
+  <url>
+    <loc>https://synaptikone.github.io/site-web-static/skillborn-site/FR/conditions.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://synaptikone.github.io/site-web-static/skillborn-site/FR/conditions.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://synaptikone.github.io/site-web-static/skillborn-site/en/condition_en.html"/>
+  </url>
+
+  <!-- Confidentialité -->
+  <url>
+    <loc>https://synaptikone.github.io/site-web-static/skillborn-site/FR/confidentialite.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://synaptikone.github.io/site-web-static/skillborn-site/FR/confidentialite.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://synaptikone.github.io/site-web-static/skillborn-site/en/confidentialite.html"/>
+  </url>
+
+</urlset>
