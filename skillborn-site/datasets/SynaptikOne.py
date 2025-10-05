@@ -1,0 +1,18 @@
+# dataset.py
+# Dataset de phrases sur la compression de données
+dataset = [
+    "La compression de données réduit la taille des fichiers.",
+    "Les algorithmes de compression peuvent être sans perte ou avec perte.",
+    "Les fichiers texte se compressent souvent très bien.",
+    "La vitesse de compression est importante pour les gros volumes de données.",
+    "La décompression doit restaurer les fichiers à leur état original.",
+    "L’optimisation des algorithmes permet de gagner en performance.",
+    "Différents formats de fichiers ont différents niveaux de compressibilité.",
+    "La compression aide à économiser de l’espace de stockage et de la bande passante.",
+    "Les tests de compression incluent souvent des fichiers de référence standards.",
+    "Le ratio de compression mesure l’efficacité d’un algorithme."
+]
+
+# Exemple d'utilisation
+for phrase in dataset:
+    print(phrase)

@@ -1,0 +1,629 @@
+/* ============================= */
+/*           RESET               */
+/* ============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #f9f9f9;
+}
+
+/* ============================= */
+/*           HEADER              */
+/* ============================= */
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: relative;
+}
+
+.navbar a {
+  color: #0077cc;
+  text-decoration: none;
+  padding: 8px 15px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  position: relative;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+/* ============================= */
+/*           DROPDOWN             */
+/* ============================= */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;      /* directement sous le parent */
+  left: 0;
+  background: #fff;
+  list-style: none;
+  min-width: 200px;
+  border: 1px solid #ddd;
+  z-index: 999;
+}
+
+/* Affichage au hover desktop */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px;
+  color: #0077cc;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f0f0f0;
+}
+
+/* ============================= */
+/*         LANG SWITCH           */
+/* ============================= */
+.lang-switch {
+  margin-left: 20px;
+}
+
+/* ============================= */
+/*         BURGER MENU           */
+/* ============================= */
+.burger {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  background: none;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #ffffff;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+
+  .nav-links.nav-active {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .dropdown-menu {
+    position: relative;
+    top: 0;
+    border: none;
+    background: #ffffff;
+  }
+
+  .dropdown-menu li a {
+    color: #0077cc;
+  }
+
+  .burger {
+    display: block;
+    color: #0077cc;
+  }
+}
+
+/* ============================= */
+/*           FOOTER              */
+/* ============================= */
+footer {
+  background-color: #222;
+  color: #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  margin: 0 8px;
+}
+
+.social-icon {
+  width: 28px;
+  height: 28px;
+  vertical-align: middle;
+}
+
+footer p.update-date {
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-top: 5px;
+}
+
+/* ============================= */
+/*      BACK TO TOP BUTTON       */
+/* ============================= */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #333;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  z-index: 9999;
+  transition: opacity 0.3s ease;
+}
+
+.back-to-top:hover {
+  background: #555;
+}
+
+/* ============================= */
+/*           MAIN                */
+/* ============================= */
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+main h1 {
+  margin-bottom: 20px;
+  color: #0077cc;
+}
+
+main section {
+  margin-bottom: 40px;
+}
+
+main section h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+main section p,
+main section li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ============================= */
+/*            LOGO               */
+/* ============================= */
+.logo-img {
+  height: 70px;
+  width: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.logo a {
+  display: inline-block;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.logo a:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================= */
+/*         PROFILE SECTION       */
+/* ============================= */
+.profile-section,
+.founder {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.profile-pic {
+  width: 180px;
+  max-width: 50%;
+  height: auto;
+  border-radius: 0%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.bio-name {
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+
+.bio-title {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* ============================= */
+/*      LISTES COMPETENCES       */
+/* ============================= */
+.expertise ul,
+.mission ul {
+  list-style-position: inside;
+  padding-left: 20px;
+  margin-left: 0;
+}
+
+.expertise ul li,
+.mission ul li {
+  margin-bottom: 8px;
+}
+
+
+
+/* ============================= */
+/*        CARDS CRYPTO           */
+/* ============================= */
+.crypto-card {
+  background-color: #fff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.crypto-card h3 {
+  margin-bottom: 10px;
+  color: #0077cc;
+}
+
+.crypto-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.crypto-address {
+  font-family: monospace;
+  background-color: #f1f1f1;
+  padding: 6px 10px;
+  border-radius: 6px;
+  word-break: break-all;
+  margin-right: 10px;
+  flex: 1 1 auto;
+  min-width: 200px;
+}
+
+
+
+/* ============================= */
+/*        BOUTONS COPIER         */
+/* ============================= */
+.copy-btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-left: 10px;
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.copy-btn:hover {
+  background-color: #005fa3;
+  transform: scale(1.05);
+}
+
+.copy-btn:active {
+  transform: scale(0.95);
+}
+
+
+
+/* hr sur le menu edition */
+hr {
+  border: 0;
+  border-top: 1px solid #ddd;
+  margin: 30px 0;
+}
+
+
+
+/* ============================= */
+/*        TABLE & LIST           */
+/* ============================= */
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+
+
+
+/* ============================= */
+/*       PORTFOLIO GRID          */
+/* ============================= */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.portfolio-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.portfolio-item a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #0077cc;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.portfolio-item a:hover {
+  background-color: #005fa3;
+}
+
+/* ============================= */
+/*        SERVICES GRID          */
+/* ============================= */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 20px 0;
+}
+
+.service-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.google-form-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.google-form-container iframe {
+  width: 100%;
+  height: 1000px; /* tu ajustes selon le besoin */
+  border: none;
+}
+
+
+
+
+/* Style général des statuts */
+.status {
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 12px;
+  margin-left: 8px;
+  color: #fff;
+  display: inline-block;
+  animation: pulse 2s infinite;
+}
+
+/* Différents types de statuts */
+.status.available {
+  background: linear-gradient(90deg, #28a745, #34d058);
+}
+
+.status.prototype {
+  background: linear-gradient(90deg, #ff9800, #ffc107);
+}
+
+.status.planned {
+  background: linear-gradient(90deg, #6c757d, #adb5bd);
+}
+
+/* Animation pulsante */
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.7; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+
+
+
+/* ------------------- Démo interactive GENOME_COMPRESSOR ------------------- */
+.project-demo {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 30px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.project-demo h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.project-demo p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #34495e;
+}
+
+.project-demo textarea {
+  width: 100%;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+  margin-bottom: 10px;
+}
+
+.project-demo button {
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease;
+}
+
+.project-demo button:hover {
+  background-color: #1c5980;
+}
+
+.project-demo pre {
+  background-color: #2d2d2d;
+  color: #f8f8f2;
+  padding: 12px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: monospace;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.project-demo h4 {
+  margin-top: 15px;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  color: #2c3e50;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project-demo {
+    padding: 15px;
+  }
+
+  .project-demo button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+
+/* Bouton parcourir custom */
+.file-btn {
+  display: inline-block;
+  background-color: #27ae60;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  margin-bottom: 10px;
+}
+
+.file-btn:hover {
+  background-color: #1e8449;
+}
+
+.file-btn:active {
+  transform: scale(0.95);
+}
+
+/* Effet sur tous les boutons existants */
+.project-demo button {
+  transition: all 0.2s ease;
+}
+
+.project-demo button:active {
+  transform: scale(0.95);      /* effet de pression */
+  background-color: #1a4a6f;  /* changement de couleur au clic */
+}
+
+/* Tu peux ajouter un petit shadow lors du hover */
+.project-demo button:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+
+
+.project-demo button {
+  transition: all 0.2s ease;
+}
+
+.project-demo button:active {
+  transform: scale(0.95);
+  background-color: #1a4a6f; /* couleur au clic */
+}
+
+.project-demo button:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}

@@ -1,0 +1,14 @@
+# robots.txt pour SynaptikOne
+# Autoriser tous les robots à explorer le site
+User-agent: *
+
+# Bloquer certains dossiers internes
+Disallow: /skillborn-site/css/    # Les fichiers CSS n'ont pas besoin d'être indexés
+Disallow: /skillborn-site/img/    # Les images peuvent être servies mais pas nécessairement indexées
+
+# Bloquer certaines pages (optionnel)
+Disallow: /skillborn-site/FR/contribution.html
+Disallow: /skillborn-site/en/contribution_en.html
+
+# Sitemap
+Sitemap: https://synaptikone.github.io/site-web-static/sitemap.xml

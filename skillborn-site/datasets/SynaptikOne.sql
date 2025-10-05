@@ -1,0 +1,18 @@
+-- Création de la table
+CREATE TABLE phrases_compression (
+    id INT PRIMARY KEY,
+    text VARCHAR(255)
+);
+
+-- Insertion des données
+INSERT INTO phrases_compression (id, text) VALUES
+(1, 'La compression de données réduit la taille des fichiers.'),
+(2, 'Les algorithmes de compression peuvent être sans perte ou avec perte.'),
+(3, 'Les fichiers texte se compressent souvent très bien.'),
+(4, 'La vitesse de compression est importante pour les gros volumes de données.'),
+(5, 'La décompression doit restaurer les fichiers à leur état original.'),
+(6, 'L’optimisation des algorithmes permet de gagner en performance.'),
+(7, 'Différents formats de fichiers ont différents niveaux de compressibilité.'),
+(8, 'La compression aide à économiser de l’espace de stockage et de la bande passante.'),
+(9, 'Les tests de compression incluent souvent des fichiers de référence standards.'),
+(10, 'Le ratio de compression mesure l’efficacité d’un algorithme.');

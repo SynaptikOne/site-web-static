@@ -1,0 +1,12 @@
+[
+  {"id": 1, "text": "La compression de données réduit la taille des fichiers."},
+  {"id": 2, "text": "Les algorithmes de compression peuvent être sans perte ou avec perte."},
+  {"id": 3, "text": "Les fichiers texte se compressent souvent très bien."},
+  {"id": 4, "text": "La vitesse de compression est importante pour les gros volumes de données."},
+  {"id": 5, "text": "La décompression doit restaurer les fichiers à leur état original."},
+  {"id": 6, "text": "L’optimisation des algorithmes permet de gagner en performance."},
+  {"id": 7, "text": "Différents formats de fichiers ont différents niveaux de compressibilité."},
+  {"id": 8, "text": "La compression aide à économiser de l’espace de stockage et de la bande passante."},
+  {"id": 9, "text": "Les tests de compression incluent souvent des fichiers de référence standards."},
+  {"id": 10, "text": "Le ratio de compression mesure l’efficacité d’un algorithme."}
+]
