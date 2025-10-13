@@ -627,138 +627,86 @@ ul {
 .project-demo button:hover {
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
-
-
-
-/* Foundateur */
-/* Section Fondateur */
-.founder {
-  padding: 60px 10%;
-  background-color: #f9f9f9;
-}
-
-.founder-container {
+/* Conteneur principal */
+.team-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap; /* pour bien s’adapter aux petits écrans */
-  gap: 40px;
-}
-
-.founder-photo {
-  flex: 1;
-  text-align: center;
-}
-
-.founder-photo .profile-pic {
-  width: 180px;
-  max-width: 150%;
-  height: auto;
-  border-radius: 0%;
-  object-fit: cover;
-  margin-bottom: 15px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-
-.founder-text {
-  flex: 2;
-  max-width: 600px;
-}
-
-.bio-name {
-  font-size: 1.8em;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
-.bio-title {
-  color: #0077b6;
-  font-weight: 500;
-  margin-bottom: 20px;
-}
-
-.bio-description {
-  line-height: 1.7;
-  color: #333;
-  text-align: left;
-}
-
-/* Responsive pour mobile */
-@media (max-width: 768px) {
-  .founder-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .founder-text {
-    max-width: 100%;
-  }
-}
-
-
-
-/* Section Partenaire */
-.partner {
+  gap: 100px; /* espace entre Founder et Partner */
+  justify-content: center; 
+  flex-wrap: wrap; 
   padding: 60px 10%;
   background-color: #f9f9f9;
 }
 
+/* Chaque bloc */
+.team-container > .founder,
+.team-container > .partner {
+  flex: 1 1 400px;  /* minimum 400px pour chaque bloc */
+  max-width: 600px; /* maximum pour ne pas s'étirer trop sur grand écran */
+  display: flex;
+  align-items: center; /* aligner verticalement image + texte */
+  gap: 20px; /* espace entre image et texte */
+}
+
+/* Conteneur interne (pour l’image et le texte) */
+.founder-container,
 .partner-container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap; /* pour bien s’adapter aux petits écrans */
-  gap: 40px;
+  gap: 20px; /* espace entre photo et texte */
+  flex-wrap: nowrap; /* pas d’emboîtement */
 }
 
-.partner-photo {
-  flex: 1;
-  text-align: center;
-}
-
+/* Image */
+.founder-photo .profile-pic,
 .partner-photo .profile-pic {
-  width: 180px;
-  max-width: 150%;
+  width: 200px;
+  max-width: 100%;
   height: auto;
   border-radius: 0%;
   object-fit: cover;
-  margin-bottom: 15px;
+  margin-bottom: 0; /* plus besoin, texte à côté */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
+/* Texte */
+.founder-text,
 .partner-text {
-  flex: 2;
-  max-width: 600px;
-}
-
-.bio-name {
-  font-size: 1.8em;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
-.bio-title {
-  color: #0077b6;
-  font-weight: 500;
-  margin-bottom: 20px;
-}
-
-.bio-description {
-  line-height: 1.7;
-  color: #333;
+  flex: 1;
+  max-width: calc(100% - 200px); /* prend le reste de l'espace */
   text-align: left;
+  font-family:math;
 }
 
-/* Responsive pour mobile */
-@media (max-width: 768px) {
+/* Responsive tablette */
+@media (max-width: 1024px) {
+  .team-container > .founder,
+  .team-container > .partner {
+    flex-direction: column; /* empiler sur tablette */
+    max-width: 100%;
+  }
+
+  .founder-container,
   .partner-container {
     flex-direction: column;
     text-align: center;
   }
 
+  .founder-text,
   .partner-text {
     max-width: 100%;
+  }
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+  .team-container {
+    flex-direction: column;
+    gap: 15px;
+    padding: 40px 5%;
+  }
+
+  .founder-photo .profile-pic,
+  .partner-photo .profile-pic {
+    width: 180px;
   }
 }
